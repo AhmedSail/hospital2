@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'Main'=>'Hospital Management System',
+    'index'=>'index',
+    'sections'=>'sections',
+    'show all'=>'Show All',
+    'doctors'=>'Doctors',
+    'Service'=>'Service',
+    'Single Service'=>'Single Service',
+    'Group Service'=>'Group Service',
+    'Ambulance'=>'Ambulance',
+    'Ambulance Call'=>'Ambulance Call',
+    'Insurance Companies'=> 'Insurance Companies',
+    'Patients'=>'Patients',
+    'Patients List'=>'Patients List',
+    'Invoices'=>'Invoices',
+    'Single Service Invoice'=>'Single Service Invoice',
+    'Group Service Invoice'=>'Group Service Invoice',
+    'Finance'=>'Finance',
+    'List Of Complete Diagnostics'=>'List Of Complete Diagnostics',
+    'List Of Reviews'=>'List Of Reviews',
+    'X-Ray'=>'X-Ray',
+    'Employee List'=>'Employee List',
+    'Records List'=>'Records List',
+    'Laboratory'=>'Laboratory',
+];

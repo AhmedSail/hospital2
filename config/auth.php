@@ -1,5 +1,6 @@
 <?php
 
+
 return [
 
     /*
@@ -40,6 +41,27 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        'patient' => [
+            'driver' => 'session',
+            'provider' => 'patients',
+        ],
+        'doctor' => [
+            'driver' => 'session',
+            'provider' => 'doctors',
+        ],
+
+        'ray_employee' => [
+            'driver' => 'session',
+            'provider' => 'ray_employees',
+        ],
+        'laboratory_employee' => [
+            'driver' => 'session',
+            'provider' => 'laboratory_employees',
+        ],
     ],
 
     /*
@@ -64,12 +86,29 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+        'patients' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Patient::class,
+        ],
+        'doctors' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Doctor::class,
+        ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'ray_employees' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\RayEmployee::class,
+        ],
+        'laboratory_employees' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\LaboratoryEmployee::class,
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -97,6 +136,38 @@ return [
             'expire' => 60,
             'throttle' => 60,
         ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'patients' => [
+            'provider' => 'patients',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'doctors' => [
+            'provider' => 'doctors',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
+        'ray_employees' => [
+            'provider' => 'ray_employees',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'laboratory_employees' => [
+            'provider' => 'laboratory_employees',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+
     ],
 
     /*

@@ -43,6 +43,12 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+        'upload_image' => [
+            'driver' => 'local',
+            'root' => public_path('Dashboard/img'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
 
         's3' => [
             'driver' => 's3',
@@ -57,6 +63,15 @@ return [
         ],
 
     ],
+    'mimes' => [
+        'jpeg' => ['jpeg', 'jpg', 'jpe'],
+        'png' => ['png'],
+        'gif' => ['gif'],
+        'pdf' => ['pdf'],
+        // يجب أن تكون قيمة 'jfif' موجودة هنا إذا كنت ترغب في دعم امتداد JFIF.
+        'jfif' => ['jfif'],
+    ],
+
 
     /*
     |--------------------------------------------------------------------------

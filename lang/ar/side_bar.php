@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'Main'=>'برنانج ادارة المستشفيات',
+    'index'=>'الرئيسية',
+    'sections'=>'الأقسام',
+    'show all'=>'عرض الكل',
+    'doctors'=>'الأطباء',
+    'Service'=>'الخدمات',
+    'Single Service'=>'خدمة مفردة',
+    'Group Service'=>'مجموعة خدمات',
+    'Ambulance'=>'الإسعاف',
+    'Ambulance Call'=>'مكالمات الإسعاف',
+    'Insurance Companies'=>'شركات التامين',
+    'Patients'=>'المرضى',
+    'Patients List'=>'قائمة المرضى',
+    'Invoices'=>'الفواتير',
+    'Single Service Invoice'=>'فاتورة خدمة مفردة',
+    'Group Service Invoice'=>'فاتورة مجموعة خدمات ',
+    'Finance'=>'الحسابات',
+    'List Of Complete Diagnostics'=>'قائمة الكشوفات المكتملة',
+    'List Of Reviews'=>'قائمة المراجعات',
+    'X-Ray'=>'الأشعة',
+    'Employee List'=>'قائمة الموظفين',
+    'Records List'=>'قائمة الكشوفات',
+    'Laboratory'=>'المختبر',
+];
